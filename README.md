@@ -1,8 +1,6 @@
--UNIX Socket Programming Project
+# UNIX Socket Programming Project
 
-a. Name: Yicheng Zheng
-
-c. Tasks Completed: 
+## Tasks Completed: 
 	1. Established TCP connection between AWS server and monitor, and client. 
 	2. Established UDP connection between AWS server 
 	3. Extra credit suffix function has been implemented. 
@@ -13,7 +11,7 @@ c. Tasks Completed:
 
 
 
-d. Files included and their main functions: 
+## Files included and their main functions: 
 
 1. aws.cpp
 	- Created TCP socket for both client and monitor, binded each TCP socket to its respective port number and IP address, and then listen for incoming connections.
@@ -63,7 +61,7 @@ d. Files included and their main functions:
 	- Maintained TCP connection with the AWS via a infinite loop
 
 
-e. Format of message exchanged. 
+## Format of message exchanged. 
 	- Client to AWS
 		* Function to be performed and word to be searched were sent as character to the AWS. 
 
@@ -84,9 +82,7 @@ e. Format of message exchanged.
 		* Content in the vectors were sent to monitor in a loop. 
 		* After received all words from AWS, monitor displayed required list of words and definition.
 
-g. Limitation: All messages sent were default to size of 101 byte. Therefore, if there're too many results to be sent continuously (>500 messages), the heap memory of the VM will run out and cause the project to fail. 
-
-h. Reused Code: 
+## Reused Code: 
 	- Beej & GeeksforGeeks, Socket Programming in C/C++ (https://www.geeksforgeeks.org/socket-programming-cc/)
 		socket()
 		bind()
